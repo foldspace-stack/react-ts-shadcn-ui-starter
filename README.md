@@ -1,16 +1,16 @@
 <div align="center">
   <img src="./public/doc/cover.png">
-  <h3 align="center">Boilerplate ReactBook</h3>
+  <h3 align="center">Boilerplate ReactBook - Packaged</h3>
   <p>
-    A complete boilerplate with all the tools needed for a high-performance application.
+    A complete boilerplate with all the tools needed for a publish NPM Package.
   </p>
   <br />
   <p align="center">
-    <a href="https://boilerplate-reactbook.netlify.app"><b>View Demo</b></a>
+    <a href="https://boilerplate-reactbook-packaged.netlify.app"><b>View Demo</b></a>
     ·
-    <a href="https://github.com/AndreLuizMag/boilerplate-react-typescript-storybook/issues"><b>Report Bug</b></a>
+    <a href="https://github.com/AndreLuizMag/boilerplate-react-storybook-npm-package/issues"><b>Report Bug</b></a>
     ·
-    <a href="https://github.com/AndreLuizMag/boilerplate-react-typescript-storybook/issues"><b>Request Feature</b></a>
+    <a href="https://github.com/AndreLuizMag/boilerplate-react-storybook-npm-package/issues"><b>Request Feature</b></a>
   </p>
 </div>
 
@@ -41,7 +41,16 @@ This project only has the base tools for development:
 In addition to the technologies mentioned above, this
 template also includes:
 
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 - [BEM](https://en.bem.info/methodology/)
+
+### Do you want to do it differently?
+
+If you want to create a project to be published as a web
+page, you can access my other boilerplate with all the
+necessary configurations:
+[boilerplate-react-typescript-storybook](https://github.com/AndreLuizMag/boilerplate-react-typescript-storybook)
 
 <br/>
 
@@ -51,7 +60,7 @@ To start using this template is very simple! Clone the
 project.
 
 ```bash
-git clone https://github.com/AndreLuizMag/boilerplate-react-typescript-storybook.git
+git clone https://github.com/AndreLuizMag/boilerplate-react-storybook-npm-package.git
 ```
 
 ### Prerequisites
@@ -85,11 +94,20 @@ project into action.
 npm run dev
 ```
 
-#### Running Storybook
+_Starts the development server for the project._
+
+<br/>
+
+#### Running ESLint
 
 ```bash
-npm run sb
+npm run lint
 ```
+
+_Executes ESLint to check for code quality and style
+issues._
+
+<br/>
 
 #### Running Vitest
 
@@ -97,18 +115,29 @@ npm run sb
 npm run test
 ```
 
+_Launches Vitest for automated testing._
+
+<br/>
+
+#### Running Storybook
+
+```bash
+npm run sb
+```
+
+_Starts Storybook for component development and testing._
+
+<br/>
+
 #### Build project
 
 ```bash
 npm run build
 ```
 
-#### Build Storybook
+_Builds the project for production deployment._
 
-```bash
-npm run sb
-```
-
+<br/>
 <br/>
 
 ## License

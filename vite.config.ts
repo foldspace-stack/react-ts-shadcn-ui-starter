@@ -10,16 +10,15 @@ import dts from 'vite-plugin-dts'
 import scss from 'rollup-plugin-scss'
 
 export default defineConfig({
-	plugins: [react(), scss(), dts({ include: ['lib'] })],
+	plugins: [react(), scss(), dts({ include: ['src'] })],
 	test: {
 		globals: true,
 		environment: 'jsdom',
 	},
 	build: {
 		copyPublicDir: false,
-		outDir: 'dist',
 		lib: {
-			entry: resolve(__dirname, 'src/index.ts'),
+			entry: resolve(__dirname, 'src/index.html'),
 			formats: ['es'],
 		},
 		rollupOptions: {
@@ -34,7 +33,7 @@ export default defineConfig({
 							!file.includes('/assets') &&
 							!file.includes('/styles') &&
 							!file.includes('App.tsx') &&
-							!file.includes('main.ts')
+							!file.includes('main.tsx')
 					)
 					.map((file) => [
 						relative(
@@ -49,7 +48,7 @@ export default defineConfig({
 			),
 			output: {
 				assetFileNames: 'assets/[name][extname]',
-				entryFileNames: '[name].ts',
+				entryFileNames: '[name].js',
 			},
 		},
 	},

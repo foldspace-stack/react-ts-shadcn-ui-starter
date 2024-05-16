@@ -1,4 +1,5 @@
-// import './assets/output.css'
-import BvIcon from './components/BvIcon'
+import { Button } from './components/Button'
+import { Header } from './components/Header'
+import { Page } from './components/Page'
 
-export { BvIcon }
+export { Button, Header, Page }

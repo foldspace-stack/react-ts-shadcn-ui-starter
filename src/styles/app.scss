@@ -9,12 +9,13 @@
 	justify-content: center;
 }
 
-.grid-logo {
+.center-content {
 	width: fit-content;
 	width: --moz-fit-content;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo {
