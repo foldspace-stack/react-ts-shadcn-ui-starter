@@ -42,6 +42,7 @@ export const Button = ({
 			data-testid='button'
 			className={[
 				'storybook-button',
+				'text-3xl',
 				`storybook-button--${size}`,
 				mode,
 			].join(' ')}

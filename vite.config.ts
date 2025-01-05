@@ -8,12 +8,18 @@ import { glob } from 'glob'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import scss from 'rollup-plugin-scss'
+import tailwindcss from 'tailwindcss'
 
 export default defineConfig({
 	plugins: [react(), scss(), dts({ include: ['src'] })],
 	test: {
 		globals: true,
 		environment: 'jsdom',
+	},
+	css: {
+		postcss: {
+			plugins: [tailwindcss()],
+		},
 	},
 	build: {
 		copyPublicDir: false,
