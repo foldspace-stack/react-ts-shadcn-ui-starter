@@ -1,4 +1,5 @@
 import './index.scss'
+import { Button as ButtonUI } from "@/components/ui/button"
 
 interface ButtonProps {
 	/**
@@ -37,18 +38,16 @@ export const Button = ({
 		? 'storybook-button--primary'
 		: 'storybook-button--secondary'
 	return (
-		<button
+		<ButtonUI
 			type='button'
 			data-testid='button'
 			className={[
-				'storybook-button',
-				'text-3xl',
-				`storybook-button--${size}`,
+				'text-1xl',
 				mode,
 			].join(' ')}
 			style={{ backgroundColor }}
 			{...props}>
 			{label}
-		</button>
+		</ButtonUI>
 	)
 }

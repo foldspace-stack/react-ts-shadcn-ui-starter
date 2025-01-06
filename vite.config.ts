@@ -9,9 +9,15 @@ import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import scss from 'rollup-plugin-scss'
 import tailwindcss from 'tailwindcss'
+import path from 'path'
 
 export default defineConfig({
 	plugins: [react(), scss(), dts({ include: ['src'] })],
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, './src'),
+		},
+	},
 	test: {
 		globals: true,
 		environment: 'jsdom',

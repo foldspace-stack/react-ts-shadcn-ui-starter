@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-react-typescript-storybook",
+  "name": "react-ts-shadcn-ui-starter",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -18,6 +18,7 @@
     "build-sb": "storybook build"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
@@ -41,6 +42,7 @@
     "@storybook/test": "^8.1.0",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
+    "@types/node": "^22.10.5",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
